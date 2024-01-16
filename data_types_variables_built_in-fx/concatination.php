@@ -1,3 +1,9 @@
+<?php
+  $firstName = 'John';
+  $lastName = 'Doe';
+  $fullName = $firstName . ' ' . $lastName;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +23,12 @@
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-semibold mb-4">Welcome To The Course</h2>
+            <!-- the difference between single to double quotes -->
+            <?= 'Hello, my name is ' . $fullName . '<br />' ?>
+            <?= "Hello, my name is {$fullName}" . '<br />' ?>
+            <!-- the difference between single to double quotes -->
+            <?= 'Hello, my name is \'John\'' ?>
+            
              <p>In this course, you will learn the fundamentals of the PHP language</p>
         </div>
     </div>
