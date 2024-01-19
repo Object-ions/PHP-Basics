@@ -13,16 +13,22 @@
   //   return $c;
   // }
   
-  $degToConvert = 68;
+  // $degToConvert = 68;
   
 // echo $degToConvert . '&deg;F ' . fahrenheitToCelsius($degToConvert) . '&deg;C';
 
 
 // As anonymous fx
-$fahrenheitToCelsius = function ($f) {
-    $c = ($f - 32) * 5 / 9;
-    return $c;  
-};
+// $fahrenheitToCelsius = function ($f) {
+//     $c = ($f - 32) * 5 / 9;
+//     return $c;  
+// };
 
+// $degToConvert = 68; 
+// echo $degToConvert . '&deg;F is ' . $fahrenheitToCelsius($degToConvert) . '&deg;C';
+
+//  As arrow function
+
+$fahrenheitToCelsius = fn($f) => ($f - 32) * 5 / 9;
 $degToConvert = 68; 
 echo $degToConvert . '&deg;F is ' . $fahrenheitToCelsius($degToConvert) . '&deg;C';
