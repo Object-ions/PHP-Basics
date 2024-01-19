@@ -7,3 +7,12 @@
 
   The formula to convert Fahrenheit to Celsius is: Celsius = (Fahrenheit - 32) * 5/9
 */
+
+function fahrenheitToCelsius($f) {
+  $c = ($f - 32) * 5/9;
+  return $c;
+}
+
+$degToConvert = 68;
+
+echo $degToConvert . '&deg;F ' . fahrenheitToCelsius($degToConvert) . '&deg;C';
